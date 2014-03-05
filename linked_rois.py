@@ -60,7 +60,7 @@ lay.addWidget(pg2, 0, 1, 1, 1)
 ########################
 
 # Read the image, and only take the first channel if it has multiple channels
-image = cv2.imread(sys.argv[1])
+image = cv2.imread(sys.argv[1] if len(sys.argv) >= 2 else "./images/test.jpg")
 image = image if image.ndim == 2 else image[:, :, 0]
 
 # Transpose and mirror the image because PyQtGraph doesn't seem to use and
