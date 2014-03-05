@@ -39,7 +39,7 @@ vb1 = pg.ViewBox()
 im1 = pg.ImageItem()
 vb1.addItem(im1)
 vb1.setAspectLocked(True)    # No aspect distortions
-pg1.setBackground(None)      # Transparet background outside of the image
+pg1.setBackground(None)      # Transparent background outside of the image
 pg1.setCentralWidget(vb1)    # Autoscale the image when the window is rescaled
 
 # Do the same for the second GraphicsView
